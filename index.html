@@ -1,1 +1,224 @@
-hi.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aden's Portfolio - Windows XP Edition</title>
+  <link rel="stylesheet" href="source/css/global.css">
+  <link rel="stylesheet" href="source/css/desktop.css">
+  <link rel="stylesheet" href="source/css/window.css">
+  <link rel="stylesheet" href="source/css/taskbar.css">
+  <link rel="stylesheet" href="source/css/posty.css">
+  <link rel="stylesheet" href="source/css/minesweeper.css">
+  <script src="source/js/sounds.js" defer></script>
+  <script src="source/js/minesweeper.js" defer></script>
+  <script src="source/js/posty.js" defer></script>
+  <script src="source/js/notepad.js" defer></script>
+  <script src="source/js/clock.js" defer></script>
+  <script src="source/js/windows.js" defer></script>
+  <script src="source/js/startmenu.js" defer></script>
+  <script src="source/js/desktop.js" defer></script>
+  <script src="source/js/main.js" defer></script>
+</head>
+<body>
+  <audio id="startup-sound" src="source/computer-startup-264414.mp3" preload="auto"></audio>
+  <audio id="whirr-sound" src="source/computer-humming-236384.mp3" preload="auto"></audio>
+  <audio id="click-sound" src="source/computer-mouse-click-352734.mp3" preload="auto"></audio>
+
+  <div class="desktop">
+    <div class="desktop-brand">portfolio.OS</div>
+
+    <div class="desktop-icon" data-target=".portfolio">
+      <img src="source/internet.png" alt="Portfolio" />
+      <span>Portfolio</span>
+    </div>
+    <div class="desktop-icon" data-target=".about-window">
+      <img src="source/internet.png" alt="About Me" />
+      <span>About Me</span>
+    </div>
+    <div class="desktop-icon" data-target=".image-window">
+      <img src="source/image.png" alt="image.bmp" />
+      <span>image.bmp</span>
+    </div>
+    <div class="desktop-icon" data-target=".skills-window">
+      <img src="source/text.png" alt="Skills" />
+      <span>Skills</span>
+    </div>
+    <div class="desktop-icon" data-target=".notepad-window">
+      <img src="source/notepad.png" alt="Notepad" />
+      <span>Notepad</span>
+    </div>
+    <div class="desktop-icon" data-target=".minesweeper-window">
+      <img src="source/minesweeper.png" alt="Minesweeper" />
+      <span>Minesweeper</span>
+    </div>
+
+    <div class="window portfolio" data-title="Portfolio" style="display:none; top:50px; left:50px;">
+      <div class="title-bar">
+        <span>Aden's Portfolio</span>
+        <div class="title-bar-buttons">
+          <div class="btn minimize"></div>
+          <div class="btn maximize"></div>
+          <div class="btn close"></div>
+        </div>
+      </div>
+      <div class="browser-toolbar">
+        <button class="nav-btn">⬅</button>
+        <button class="nav-btn">➡</button>
+        <button class="nav-btn">⟳</button>
+        <button class="nav-btn">✖</button>
+        <button class="nav-btn">🏠</button>
+        <div class="url-bar">
+          <span class="url-text">http://www.aden-portfolio.com/</span>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Projects</h1>
+        <ul>
+          <li><a href="#">Bulk Data Seeder with Python</a></li>
+          <li><a href="#">API-Driven UI Demo</a></li>
+          <li><a href="#">SQL Server Automation Toolkit</a></li>
+          <li><a href="#">Entity Framework Core Playground</a></li>
+        </ul>
+        <h1>What do I do?</h1>
+        <p>I design fast, scalable systems with the core belief that anything—no matter how complex—can be automated simply and efficiently.</p>
+      </div>
+      <div class="footer">
+        © 2025 Aden. All rights reserved. | Powered by caffeine and disdain for CSS.
+      </div>
+    </div>
+
+    <div class="window about-window" data-title="About Me" style="display:none; top:100px; left:700px;">
+      <div class="title-bar">
+        <span>Aden's Portfolio - About Me</span>
+        <div class="title-bar-buttons">
+          <div class="btn minimize"></div>
+          <div class="btn maximize"></div>
+          <div class="btn close"></div>
+        </div>
+      </div>
+      <div class="browser-toolbar">
+        <button class="nav-btn">⬅</button>
+        <button class="nav-btn">➡</button>
+        <button class="nav-btn">⟳</button>
+        <button class="nav-btn">✖</button>
+        <button class="nav-btn">🏠</button>
+        <div class="url-bar">
+          <span class="url-text">http://www.aden-portfolio.com/about</span>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Who am I?</h1>
+        <p>My name is Aden James Eppes Miller, and ever since I was a kid, I’ve been fascinated by technology. The first time I saw the long screen of text during the POST on my 3rd grade school computer, not understanding a word of it felt like an archaeologist discovering ancient carvings from a foreign land. That moment sparked a curiosity that has never left me.</p>
+        <p>From then on, I dove into learning as much as I could, exploring how computers worked and why systems behaved the way they did. Over time, that curiosity grew into a skillset that lets me spot inefficiencies, streamline processes, and build solutions as fast and efficiently as possible. Today, I thrive on transforming complexity into simplicity, whether through coding, game development, or system design.</p>
+      </div>
+      <div class="footer">Status: Done</div>
+    </div>
+
+    <div class="window image-window" data-title="image.bmp" style="display:none; top:300px; left:300px;">
+      <div class="title-bar">
+        <span>image.bmp</span>
+        <div class="title-bar-buttons">
+          <div class="btn minimize"></div>
+          <div class="btn maximize"></div>
+          <div class="btn close"></div>
+        </div>
+      </div>
+      <div class="image-content">
+        <img src="source/Aden.jpg" alt="Retro Image">
+      </div>
+    </div>
+
+    <div class="window skills-window" data-title="Skills" style="display:none; top:200px; left:200px;">
+      <div class="title-bar">
+        <span>Skills & Tools</span>
+        <div class="title-bar-buttons">
+          <div class="btn minimize"></div>
+          <div class="btn maximize"></div>
+          <div class="btn close"></div>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Skills</h1>
+        <ul>
+          <li>Python, C#, SQL</li>
+          <li>API Development & Automation</li>
+          <li>Game Development (Unity & Grid-Based Tactical Systems)</li>
+          <li>Server & System Administration</li>
+        </ul>
+      </div>
+      <div class="footer">XP-Mode Skills Activated</div>
+    </div>
+
+    <div class="window notepad-window" data-title="Notepad" style="display:none; top:250px; left:500px; width:500px; height:400px;">
+      <div class="title-bar">
+        <span>Notepad</span>
+        <div class="title-bar-buttons">
+          <div class="btn minimize"></div>
+          <div class="btn maximize"></div>
+          <div class="btn close"></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="editor-toolbar">
+          <select id="fontSelect" onchange="document.execCommand('fontName', false, this.value)">
+            <option value="MS Sans Serif">MS Sans Serif</option>
+            <option value="Tahoma">Tahoma</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Arial">Arial</option>
+          </select>
+          <input type="color" id="fontColor" onchange="document.execCommand('foreColor', false, this.value)">
+          <button onclick="document.execCommand('bold', false, null)">B</button>
+                    <button onclick="document.execCommand('italic', false, null)">I</button>
+          <button onclick="document.execCommand('underline', false, null)">U</button>
+        </div>
+        <div id="notepad-editor" contenteditable="true" style="width:100%; height:300px; background:#fff; border:1px inset #808080; padding:4px; overflow:auto;"></div>
+      </div>
+      <div class="footer">Notepad - portfolio.OS Edition</div>
+    </div>
+
+    <div class="window minesweeper-window" data-title="Minesweeper" style="display:none; top:100px; left:100px; width:320px; height:400px;">
+      <div class="title-bar">
+        <span>Minesweeper</span>
+        <div class="title-bar-buttons">
+          <div class="btn minimize"></div>
+          <div class="btn maximize"></div>
+          <div class="btn close"></div>
+        </div>
+      </div>
+      <div class="content" style="padding:10px;">
+        <div id="ms-grid" style="display:grid; grid-template-columns: repeat(9, 30px); grid-gap:2px;"></div>
+        <button id="ms-reset" style="margin-top:10px;">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="taskbar">
+    <button class="start-button">Start</button>
+    <div class="taskbar-windows"></div>
+    <div class="system-tray">
+      <span id="clock">11:15 AM</span>
+    </div>
+  </div>
+
+  <div class="start-menu" id="startMenu">
+    <ul>
+      <li>Programs</li>
+      <li>Documents</li>
+      <li>Settings</li>
+      <li>Find</li>
+      <li>Help</li>
+      <li>Run...</li>
+      <li>Shut Down...</li>
+    </ul>
+  </div>
+
+  <div id="posty">
+    <img src="source/posty.png" alt="Posty Assistant" />
+    <div id="posty-bubble">
+      <span id="posty-text">Hi, I’m Posty 👋 Need some help?</span>
+      <button id="posty-close">x</button>
+    </div>
+  </div>
+</body>
+</html>
