@@ -1,0 +1,188 @@
+/* Base Window */
+.window {
+  width: 600px;
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  border: 2px solid #000080;
+  box-shadow: 4px 4px 0 #808080;
+  background-color: #ffffff;
+  z-index: 10;
+  cursor: default;
+  transition: box-shadow 0.1s ease;
+}
+
+/* Minimize Animation */
+.window.minimizing {
+  transition: transform 0.4s ease-in, opacity 0.4s ease-in;
+  transform-origin: bottom left;
+  opacity: 0;
+  transform: scale(0.05, 0.05);
+}
+
+/* Title Bar */
+.title-bar {
+  background: linear-gradient(to right, #3a6ea5, #7aa6e3);
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #2a4f7c;
+}
+
+.title-bar-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.btn {
+  width: 16px;
+  height: 16px;
+  background-color: #c0c0c0;
+  border: 1px solid #808080;
+  box-shadow: inset 1px 1px #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Minimize Icon */
+.minimize::before {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 3px;
+  width: 10px;
+  height: 2px;
+  background-color: black;
+}
+
+/* Maximize Icon */
+.maximize::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+/* Close Icon */
+.close::before,
+.close::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 2px;
+  background-color: red;
+}
+
+.close::before { transform: rotate(45deg); }
+.close::after { transform: rotate(-45deg); }
+
+/* Main Window Content */
+.content {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-size: 18px;
+  color: #000080;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+a {
+  color: #000080;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: left;
+  font-size: 12px;
+  padding: 4px 10px;
+  background-color: #dcdcdc;
+  border-top: 1px solid #808080;
+  font-family: 'Tahoma', sans-serif;
+}
+
+/* Position second browser lower/right */
+.window.about-window {
+  top: 450px;
+  left: 62px;
+  width: 600px;
+}
+
+/* Second Window (Image Viewer) */
+.window.image-window {
+  width: 300px;
+  top: 100px;
+  left: 620px;
+}
+
+.image-content {
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  border: 2px solid #808080;
+  box-shadow: 2px 2px 0 #c0c0c0;
+}
+
+
+/* Browser Toolbar */
+.browser-toolbar {
+  display: flex;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 4px 6px;
+  border-bottom: 2px solid #808080;
+  gap: 4px;
+}
+
+.nav-btn {
+  background-color: #c0c0c0;
+  border: 1px solid #808080;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.url-bar {
+  flex: 1;
+  border: 1px inset #808080;
+  background-color: white;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.url-bar input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  background: transparent;
+}
